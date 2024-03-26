@@ -3,12 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-<<<<<<< HEAD
-  - Placeable
-=======
-  - Portal
->>>>>>> 41c2e76485e20df78682ffe379f756fd9e377a80
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -16,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Portal
-  - Player
+  - 
+  - 
   - 
   - 
   - 
