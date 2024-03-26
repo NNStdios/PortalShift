@@ -508,10 +508,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 437432126417841389, guid: 401fdb3e5238020118b13d0ed3f384ee, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 95b08d9841c3698a49f1a30d1de97381, type: 3}
     - target: {fileID: 877483825223174871, guid: 401fdb3e5238020118b13d0ed3f384ee, type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1253063901230743544, guid: 401fdb3e5238020118b13d0ed3f384ee, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 95b08d9841c3698a49f1a30d1de97381, type: 3}
     - target: {fileID: 4506572817740208754, guid: 401fdb3e5238020118b13d0ed3f384ee, type: 3}
       propertyPath: m_Name
       value: Portals
