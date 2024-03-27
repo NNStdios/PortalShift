@@ -1184,6 +1184,8 @@ MonoBehaviour:
     Prefab: {fileID: 3226742443464347522, guid: afcc30884cb214f4c80fd6f0d409e260, type: 3}
   - Name: Fan
     Prefab: {fileID: 4045363931463438281, guid: 3a3733db416903619b3bd7632657b4ea, type: 3}
+  - Name: JumpPad
+    Prefab: {fileID: 8893144197888709666, guid: c8e6e5dddba51c8479a42e203c048505, type: 3}
   _placemenuItemPrefab: {fileID: 3526789916614720257, guid: 9a8d56510d127ca4b9dd538b4dd99375, type: 3}
   _placeMenuUI: {fileID: 1818589662}
 --- !u!1 &1709269448
