@@ -589,6 +589,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.47
       objectReference: {fileID: 0}
+    - target: {fileID: 5866130410883610816, guid: 401fdb3e5238020118b13d0ed3f384ee, type: 3}
+      propertyPath: m_TagString
+      value: Portal
+      objectReference: {fileID: 0}
     - target: {fileID: 6723683380642832583, guid: 401fdb3e5238020118b13d0ed3f384ee, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
