@@ -609,6 +609,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 8740496920935554964, guid: 401fdb3e5238020118b13d0ed3f384ee, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740496920935554964, guid: 401fdb3e5238020118b13d0ed3f384ee, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9061641268315634764, guid: 401fdb3e5238020118b13d0ed3f384ee, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
