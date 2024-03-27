@@ -49,9 +49,8 @@ namespace Scripts.UI
                     _currentItem.transform.rotation = rotation;
                 
                 if (Input.GetKeyDown(KeyCode.Mouse0))
-                {
                     _placingItem = false;
-                }
+                
 
                 if (Input.GetKey(KeyCode.R))
                     _rotating = true;

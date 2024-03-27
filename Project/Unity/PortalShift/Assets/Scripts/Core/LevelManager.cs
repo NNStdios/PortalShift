@@ -30,6 +30,7 @@ namespace Scripts.Core
                 rb.simulated = false;
                 rb.velocity = Vector3.zero;
                 _player.transform.position = Vector3.zero;
+                _player.transform.rotation = Quaternion.Euler(Vector3.zero);
                 _playButton.image.color = Color.green;
                 _isPlaying = false;
             }
