@@ -33,5 +33,8 @@ namespace Scripts.Core
         
         private GameObject _player;
         public GameObject Player => _player = _player == null ? GameObject.FindGameObjectWithTag("Player") : _player;
+
+        private LevelManager _levelManager;
+        public LevelManager LevelManager => _levelManager == null ? GetComponent<LevelManager>() : _levelManager;
     }
 }

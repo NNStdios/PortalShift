@@ -8,19 +8,32 @@ namespace Scripts.Core
     {
         [SerializeField] private Button _playButton;
 
+        [SerializeField] private Button _restartButton;
+        [SerializeField] private GameObject _placementUI;
+        
+        //TEMP
+        [SerializeField] private GameObject _FinishMenu;
+
         private GameObject _player;
         private bool _isPlaying;
 
-        private void Awake() => _playButton.onClick.AddListener(PlayLevel);
+        private void Awake() => BindButtons();
 
         private void Start() => _player = GameManager.Instance.Player;
 
+        private void BindButtons()
+        {
+            _playButton.onClick.AddListener(PlayLevel);
+            _restartButton.onClick.AddListener(RestartLevel);
+        }
+        
         public void PlayLevel()
         {
             if (!_isPlaying)
             {
                 _player.GetComponent<Rigidbody2D>().simulated = true;
                 _playButton.image.color = Color.red;
+                _placementUI.SetActive(false);
                 _isPlaying = true;
             }
 
@@ -32,8 +45,20 @@ namespace Scripts.Core
                 _player.transform.position = Vector3.zero;
                 _player.transform.rotation = Quaternion.Euler(Vector3.zero);
                 _playButton.image.color = Color.green;
+                _placementUI.SetActive(true);
                 _isPlaying = false;
             }
+        }
+
+        public void HandleLevelFinish()
+        {
+            _FinishMenu.SetActive(true);
+        }
+
+        private void RestartLevel()
+        {
+            PlayLevel();
+            _FinishMenu.SetActive(false);
         }
     }
 }
