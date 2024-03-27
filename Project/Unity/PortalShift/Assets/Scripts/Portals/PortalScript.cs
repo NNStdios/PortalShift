@@ -11,6 +11,13 @@ namespace Portals
         
         [SerializeField] private PortalScript _correspondingPortal;
 
+        [Header("Particles")]
+        [SerializeField] private ParticleSystem _mainParticles;
+        [SerializeField] private ParticleSystem _trailParticles;
+        [SerializeField] private ParticleSystem _ribbonParticles;
+        [SerializeField] private ParticleSystem _activationParticles;
+        
+
         private void Start()
         {
             var tr = transform;
@@ -25,6 +32,7 @@ namespace Portals
             if (other.CompareTag("Portal")) return;
             if (TeleportedObjects.Contains(other.gameObject)) return;
             _correspondingPortal.TeleportedObjects.Add(other.gameObject);
+            _correspondingPortal._activationParticles.Play();
             
             var otr = other.transform;
             otr.localPosition += _positionDelta;

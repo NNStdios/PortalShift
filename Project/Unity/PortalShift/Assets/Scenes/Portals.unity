@@ -272,7 +272,7 @@ Transform:
   m_GameObject: {fileID: 1024277716}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7, y: 1.43, z: 0}
+  m_LocalPosition: {x: -3.568, y: -2.578, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 1144659287}
   - component: {fileID: 1144659290}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: MainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -425,7 +425,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 1763259356}
   - component: {fileID: 1763259355}
   m_Layer: 0
-  m_Name: Global Volume
+  m_Name: GlobalVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -543,7 +543,7 @@ Transform:
   m_GameObject: {fileID: 1763259354}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9876301, y: 1.3376663, z: 0.077237606}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -561,10 +561,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 95b08d9841c3698a49f1a30d1de97381, type: 3}
-    - target: {fileID: 835326548414027132, guid: 401fdb3e5238020118b13d0ed3f384ee, type: 3}
-      propertyPath: prewarm
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 877483825223174871, guid: 401fdb3e5238020118b13d0ed3f384ee, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -573,10 +569,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 95b08d9841c3698a49f1a30d1de97381, type: 3}
-    - target: {fileID: 4364856518733374113, guid: 401fdb3e5238020118b13d0ed3f384ee, type: 3}
-      propertyPath: prewarm
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4506572817740208754, guid: 401fdb3e5238020118b13d0ed3f384ee, type: 3}
       propertyPath: m_Name
       value: Portals
@@ -635,11 +627,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 68ea6e29ba077fa82b7241fc16df7206, type: 2}
     - target: {fileID: 8114882334907466622, guid: 401fdb3e5238020118b13d0ed3f384ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.71
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 8114882334907466622, guid: 401fdb3e5238020118b13d0ed3f384ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.3
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 9061641268315634764, guid: 401fdb3e5238020118b13d0ed3f384ee, type: 3}
       propertyPath: m_LocalPosition.x
