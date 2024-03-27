@@ -30,6 +30,7 @@ namespace Portals
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Portal")) return;
+            if (!other.TryGetComponent<Rigidbody2D>(out _)) return;
             if (TeleportedObjects.Contains(other.gameObject)) return;
             _correspondingPortal.TeleportedObjects.Add(other.gameObject);
             _correspondingPortal._activationParticles.Play();
