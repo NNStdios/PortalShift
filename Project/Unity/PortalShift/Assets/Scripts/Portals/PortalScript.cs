@@ -32,6 +32,7 @@ namespace Portals
             if (other.CompareTag("Portal")) return;
             if (!other.TryGetComponent<Rigidbody2D>(out _)) return;
             if (TeleportedObjects.Contains(other.gameObject)) return;
+            
             _correspondingPortal.TeleportedObjects.Add(other.gameObject);
             _correspondingPortal._activationParticles.Play();
             
