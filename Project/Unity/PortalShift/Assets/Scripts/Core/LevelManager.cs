@@ -39,9 +39,10 @@ namespace Scripts.Core
 
             else
             {
-                Rigidbody2D rb = _player.GetComponent<Rigidbody2D>();
+                var rb = _player.GetComponent<Rigidbody2D>();
                 rb.simulated = false;
-                rb.velocity = Vector3.zero;
+                rb.velocity = Vector2.zero;
+                rb.angularVelocity = 0;
                 _player.transform.position = Vector3.zero;
                 _player.transform.rotation = Quaternion.Euler(Vector3.zero);
                 _playButton.image.color = Color.green;
