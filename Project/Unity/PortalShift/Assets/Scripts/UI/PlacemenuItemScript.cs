@@ -24,7 +24,7 @@ namespace Scripts.UI
             _prefab = prefab;
         }
 
-        private void Start() => GetComponent<Button>().onClick.AddListener(SpawnItem);
+        private void Start() => GetComponentInChildren<Button>().onClick.AddListener(SpawnItem);
 
         private void Update()
         {

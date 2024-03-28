@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,7 @@ namespace Scripts.Core
     public class LevelManager : MonoBehaviour
     {
         [SerializeField] private Button _playButton;
+        [SerializeField] private List<GameObject> _levels;
 
         [SerializeField] private Button _restartButton;
         [SerializeField] private GameObject _placementUI;
@@ -16,6 +18,7 @@ namespace Scripts.Core
 
         private GameObject _player;
         private bool _isPlaying;
+        private int _currentLevelIndex;
 
         private void Awake() => BindButtons();
 
@@ -56,7 +59,18 @@ namespace Scripts.Core
             _FinishMenu.SetActive(true);
         }
 
-        private void RestartLevel()
+        public void NextLevel()
+        {
+            _currentLevelIndex++;
+
+            foreach (var level in _levels)
+                level.SetActive(false);
+
+            _levels[_currentLevelIndex].SetActive(true);
+            PlayLevel();
+        }
+
+        public void RestartLevel()
         {
             PlayLevel();
             _FinishMenu.SetActive(false);

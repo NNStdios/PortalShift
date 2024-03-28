@@ -9,7 +9,7 @@ namespace Scripts.World
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (other.transform.CompareTag("Player"))
-                GameManager.Instance.LevelManager.HandleLevelFinish();
+                GameManager.Instance.LevelManager.NextLevel();
         }
     }
 }
