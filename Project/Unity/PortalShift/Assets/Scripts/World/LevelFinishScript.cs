@@ -1,8 +1,7 @@
-using System;
 using Core;
 using UnityEngine;
 
-namespace Scripts.World
+namespace World
 {
     public class LevelFinishScript : MonoBehaviour
     {

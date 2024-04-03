@@ -1,23 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UIElements;
 
-public class JumpPadScript : MonoBehaviour
+namespace World
 {
-    public float jumpForce = 3f;
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class JumpPadScript : MonoBehaviour
     {
-        if (!collision.TryGetComponent<Rigidbody2D>(out var rb)) 
-            return;
+        public float jumpForce = 3f;
 
-        rb.velocity = Vector2.zero;
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (!collision.TryGetComponent<Rigidbody2D>(out var rb)) 
+                return;
 
-        rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+            rb.velocity = Vector2.zero;
+
+            rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+
+        }
 
     }
-
 }
  

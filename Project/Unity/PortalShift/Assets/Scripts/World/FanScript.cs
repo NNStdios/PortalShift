@@ -1,9 +1,8 @@
-using System;
 using System.Collections.Generic;
 using Core;
 using UnityEngine;
 
-namespace Scripts.World
+namespace World
 {
     public class FanScript : MonoBehaviour
     {
