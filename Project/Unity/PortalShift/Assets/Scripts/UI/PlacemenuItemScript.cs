@@ -1,5 +1,5 @@
 using System;
-using Scripts.Core;
+using Core;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

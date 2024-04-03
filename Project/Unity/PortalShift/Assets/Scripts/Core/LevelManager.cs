@@ -1,9 +1,9 @@
-using System;
 using System.Collections.Generic;
+using Scripts.Core;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Scripts.Core
+namespace Core
 {
     public class LevelManager : MonoBehaviour
     {
@@ -14,7 +14,7 @@ namespace Scripts.Core
         [SerializeField] private GameObject _placementUI;
         
         //TEMP
-        [SerializeField] private GameObject _FinishMenu;
+        [SerializeField] private GameObject _finishMenu;
 
         private GameObject _player;
         private bool _isPlaying;
@@ -56,7 +56,7 @@ namespace Scripts.Core
 
         public void HandleLevelFinish()
         {
-            _FinishMenu.SetActive(true);
+            _finishMenu.SetActive(true);
         }
 
         public void NextLevel()
@@ -73,7 +73,7 @@ namespace Scripts.Core
         public void RestartLevel()
         {
             PlayLevel();
-            _FinishMenu.SetActive(false);
+            _finishMenu.SetActive(false);
         }
     }
 }

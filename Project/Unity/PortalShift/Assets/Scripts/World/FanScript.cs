@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Scripts.Core;
+using Core;
 using UnityEngine;
 
 namespace Scripts.World

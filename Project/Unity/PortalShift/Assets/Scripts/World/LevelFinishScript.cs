@@ -1,5 +1,5 @@
 using System;
-using Scripts.Core;
+using Core;
 using UnityEngine;
 
 namespace Scripts.World
