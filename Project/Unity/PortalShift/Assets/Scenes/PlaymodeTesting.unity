@@ -1836,6 +1836,7 @@ GameObject:
   - component: {fileID: 1675537568}
   - component: {fileID: 1675537569}
   - component: {fileID: 1675537570}
+  - component: {fileID: 1675537571}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1888,7 +1889,7 @@ MonoBehaviour:
   - {fileID: 1348485437}
   _restartButton: {fileID: 1869091044}
   _placementUI: {fileID: 1818589661}
-  _FinishMenu: {fileID: 1031910836}
+  _finishMenu: {fileID: 0}
 --- !u!114 &1675537570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1910,6 +1911,19 @@ MonoBehaviour:
     Prefab: {fileID: 8893144197888709666, guid: c8e6e5dddba51c8479a42e203c048505, type: 3}
   _placemenuItemPrefab: {fileID: 3526789916614720257, guid: 9a8d56510d127ca4b9dd538b4dd99375, type: 3}
   _placeMenuUI: {fileID: 1818589662}
+--- !u!114 &1675537571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675537566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6b1e5939424e83912222ede0681a72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxPosDelta: 0.1
 --- !u!1 &1709269448
 GameObject:
   m_ObjectHideFlags: 0

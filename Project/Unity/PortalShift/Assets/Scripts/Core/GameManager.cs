@@ -1,4 +1,5 @@
 using UnityEngine;
+using World;
 
 namespace Core
 {
@@ -36,5 +37,8 @@ namespace Core
 
         private LevelManager _levelManager;
         public LevelManager LevelManager => _levelManager == null ? GetComponent<LevelManager>() : _levelManager;
+
+        private SelectionManager _selectionManager;
+        public SelectionManager SelectionManager => _selectionManager == null ? GetComponent<SelectionManager>() : _selectionManager;
     }
 }
