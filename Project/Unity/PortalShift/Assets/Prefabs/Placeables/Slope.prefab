@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7490536446461530831}
   - component: {fileID: 3867300807716045552}
   - component: {fileID: 4120560161994532066}
+  - component: {fileID: -8302568282608642013}
   m_Layer: 0
   m_Name: Slope
   m_TagString: Placeable
@@ -130,3 +131,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-8302568282608642013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3226742443464347522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8473fb90c4554a1a985120a762e7dc46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
