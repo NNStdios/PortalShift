@@ -57,19 +57,9 @@ namespace Scripts.UI
                 else
                     _rotating = false;
             }
-            
-            if (Input.GetKeyDown(KeyCode.Mouse1))
-            {
-                Vector2 ray = GameManager.Instance.MainCam.ScreenToWorldPoint(Input.mousePosition);
-                RaycastHit2D hit = Physics2D.Raycast(ray, Vector2.zero);
-                
-                if (hit.transform == null)
-                    return;
-                    
-                if (hit.transform.CompareTag("Placeable"))
-                        Destroy(hit.collider.gameObject);
-            }
         }
+
+        public void DestoryObject(RaycastHit2D hit) => Destroy(hit.collider.gameObject);
 
         private void SpawnItem()
         {

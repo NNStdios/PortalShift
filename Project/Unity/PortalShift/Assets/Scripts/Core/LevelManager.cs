@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Scripts.Player;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,7 +16,10 @@ namespace Scripts.Core
         
         //TEMP
         [SerializeField] private GameObject _FinishMenu;
+        [SerializeField] private Rigidbody _rigidbody;
 
+        public bool PlayerDestoryed;
+        
         private GameObject _player;
         private bool _isPlaying;
         private int _currentLevelIndex;
@@ -43,6 +47,7 @@ namespace Scripts.Core
             else
             {
                 var rb = _player.GetComponent<Rigidbody2D>();
+                var playerScript = _player.GetComponent<PlayerScript>();
                 rb.simulated = false;
                 rb.velocity = Vector2.zero;
                 rb.angularVelocity = 0;
@@ -50,6 +55,9 @@ namespace Scripts.Core
                 _player.transform.rotation = Quaternion.Euler(Vector3.zero);
                 _playButton.image.color = Color.green;
                 _placementUI.SetActive(true);
+                if (playerScript.RestartLevelCoroutine != null)
+                    StopCoroutine(playerScript.RestartLevelCoroutine);
+                PlayerDestoryed = false;
                 _isPlaying = false;
             }
         }
@@ -73,7 +81,6 @@ namespace Scripts.Core
         public void RestartLevel()
         {
             PlayLevel();
-            _FinishMenu.SetActive(false);
         }
     }
 }

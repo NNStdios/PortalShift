@@ -9,8 +9,11 @@ namespace Scripts.World
     {
         [SerializeField] private float _force;
 
+        [SerializeField] private GameObject _popupMenu;
+
         private List<Rigidbody2D> _moveableObjects = new();
         private GameObject _player;
+        private bool _popupMenuActive;
 
         private void Start() => _player = GameManager.Instance.Player;
 
@@ -19,9 +22,7 @@ namespace Scripts.World
         private void BlowPlayers()
         {
             foreach (var moveableObject in _moveableObjects)
-            {
                 moveableObject.AddForce(-transform.right * _force);
-            }
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -34,6 +35,21 @@ namespace Scripts.World
         {
             if (other.TryGetComponent<Rigidbody2D>(out var rb))
                 _moveableObjects.Remove(rb);
+        }
+
+        //TEMP TESTING IS IDEA FITS OR NOT
+        public void ActivatePopupMenu()
+        {
+            if (_popupMenuActive)
+            {
+                _popupMenu.SetActive(true);
+                _popupMenuActive = true;
+            }
+            else
+            {
+                _popupMenu.SetActive(false);
+                _popupMenuActive = false;
+            }
         }
     }
 }

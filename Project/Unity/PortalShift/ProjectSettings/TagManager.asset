@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Portal
+  - Placeable
+  - Obsticle
   layers:
   - Default
   - TransparentFX
