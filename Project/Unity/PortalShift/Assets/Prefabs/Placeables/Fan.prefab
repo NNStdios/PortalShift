@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5685371482895417647}
   - component: {fileID: 1142166865686839827}
   - component: {fileID: 4004896553228749415}
+  - component: {fileID: 7921689474002777408}
   m_Layer: 0
   m_Name: Fan
   m_TagString: Placeable
@@ -144,3 +145,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7921689474002777408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4045363931463438281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8473fb90c4554a1a985120a762e7dc46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

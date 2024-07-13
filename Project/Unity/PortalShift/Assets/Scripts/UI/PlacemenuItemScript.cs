@@ -1,10 +1,9 @@
-using System;
-using Scripts.Core;
+using Core;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Scripts.UI
+namespace UI
 {
     public class PlacemenuItemScript : MonoBehaviour
     {

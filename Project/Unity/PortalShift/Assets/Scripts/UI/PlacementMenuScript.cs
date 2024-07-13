@@ -1,8 +1,7 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Scripts.UI
+namespace UI
 {
     public class PlacementMenuScript : MonoBehaviour
     {

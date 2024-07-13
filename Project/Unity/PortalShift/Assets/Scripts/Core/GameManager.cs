@@ -1,7 +1,8 @@
 using Scripts.Player;
 using UnityEngine;
+using World;
 
-namespace Scripts.Core
+namespace Core
 {
     public class GameManager : MonoBehaviour
     {
@@ -37,5 +38,8 @@ namespace Scripts.Core
 
         private LevelManager _levelManager;
         public LevelManager LevelManager => _levelManager == null ? GetComponent<LevelManager>() : _levelManager;
+
+        private SelectionManager _selectionManager;
+        public SelectionManager SelectionManager => _selectionManager == null ? GetComponent<SelectionManager>() : _selectionManager;
     }
 }

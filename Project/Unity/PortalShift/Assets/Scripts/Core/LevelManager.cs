@@ -1,10 +1,9 @@
-using System;
 using System.Collections.Generic;
 using Scripts.Player;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Scripts.Core
+namespace Core
 {
     public class LevelManager : MonoBehaviour
     {
@@ -15,8 +14,12 @@ namespace Scripts.Core
         [SerializeField] private GameObject _placementUI;
         
         //TEMP
+<<<<<<< HEAD
         [SerializeField] private GameObject _FinishMenu;
         [SerializeField] private Rigidbody _rigidbody;
+=======
+        [SerializeField] private GameObject _finishMenu;
+>>>>>>> 3f6ce71b37d3b0fd6ac1bc014ad426489de828ed
 
         public bool PlayerDestoryed;
         
@@ -64,7 +67,7 @@ namespace Scripts.Core
 
         public void HandleLevelFinish()
         {
-            _FinishMenu.SetActive(true);
+            _finishMenu.SetActive(true);
         }
 
         public void NextLevel()
@@ -81,6 +84,10 @@ namespace Scripts.Core
         public void RestartLevel()
         {
             PlayLevel();
+<<<<<<< HEAD
+=======
+            _finishMenu.SetActive(false);
+>>>>>>> 3f6ce71b37d3b0fd6ac1bc014ad426489de828ed
         }
     }
 }

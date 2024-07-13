@@ -1946,8 +1946,12 @@ MonoBehaviour:
   - {fileID: 1348485437}
   _restartButton: {fileID: 1869091044}
   _placementUI: {fileID: 1818589661}
+<<<<<<< HEAD
   _FinishMenu: {fileID: 1031910836}
   PlayerDestoryed: 0
+=======
+  _finishMenu: {fileID: 0}
+>>>>>>> 3f6ce71b37d3b0fd6ac1bc014ad426489de828ed
 --- !u!114 &1675537570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1978,9 +1982,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1675537566}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: a08971fcdfc539493980ecf9ac07f02f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+  m_Script: {fileID: 11500000, guid: bb6b1e5939424e83912222ede0681a72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxPosDelta: 0.1
+>>>>>>> 3f6ce71b37d3b0fd6ac1bc014ad426489de828ed
 --- !u!1 &1709269448
 GameObject:
   m_ObjectHideFlags: 0
